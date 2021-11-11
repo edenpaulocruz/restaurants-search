@@ -8,7 +8,7 @@ export const Container = styled.aside`
   background-color: ${(props) => props.theme.colors.background};
   height: 100vh;
   overflow-y: auto;
-  width: 360px;
+  width: 29rem;
 `;
 
 export const Search = styled.section`
@@ -27,5 +27,14 @@ export const Logo = styled.img`
 
 export const Map = styled.div`
   background-color: darkgray;
-  width: calc(100% - 360px)
+  width: calc(100% - 360px);
+`;
+
+export const CarouselTitle = styled.h1`
+  color: ${(props) => props.theme.colors.text};
+  font-family: ${(props) => props.theme.fonts.regular};
+  font-size: 1.5rem;
+  font-weight: bold;
+  line-height: 2rem;
+  margin-top: 1rem;
 `;
