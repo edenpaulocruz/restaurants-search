@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
-import Slider from "react-slick";
+import Slider from 'react-slick';
 import TextField, { Input } from '@material/react-text-field';
 import MaterialIcon from '@material/react-material-icon';
 import { Card } from '../../components';
 import logo from '../../assets/logo.svg';
 import restaurante from '../../assets/restaurante-fake.png';
-import { Container, Search, Logo, Wrapper, Map, CarouselTitle } from './styles';
+import { GlobalStyle, Container, Search, Logo, Wrapper, Map, CarouselTitle } from './styles';
 
 const Home = () => {
   const [inputValue, setInputValue] = useState('');
@@ -21,6 +21,7 @@ const Home = () => {
 
   return (
     <Wrapper>
+      <GlobalStyle />
       <Container>
         <Search>
           <Logo src={logo} alt="Logo do Restaurant Finder" />
@@ -32,16 +33,16 @@ const Home = () => {
           </TextField>
           <CarouselTitle>Na sua área</CarouselTitle>
           <Slider {...settings}>
-            <Card photo={restaurante} title='Nome do restaurante' />
-            <Card photo={restaurante} title='Nome do restaurante' />
-            <Card photo={restaurante} title='Nome do restaurante' />
-            <Card photo={restaurante} title='Nome do restaurante' />
-            <Card photo={restaurante} title='Nome do restaurante' />
-            <Card photo={restaurante} title='Nome do restaurante' />
-            <Card photo={restaurante} title='Nome do restaurante' />
-            <Card photo={restaurante} title='Nome do restaurante' />
-            <Card photo={restaurante} title='Nome do restaurante' />
-            <Card photo={restaurante} title='Nome do restaurante' />
+            <Card photo={restaurante} title="Nome do restaurante" />
+            <Card photo={restaurante} title="Nome do restaurante" />
+            <Card photo={restaurante} title="Nome do restaurante" />
+            <Card photo={restaurante} title="Nome do restaurante" />
+            <Card photo={restaurante} title="Nome do restaurante" />
+            <Card photo={restaurante} title="Nome do restaurante" />
+            <Card photo={restaurante} title="Nome do restaurante" />
+            <Card photo={restaurante} title="Nome do restaurante" />
+            <Card photo={restaurante} title="Nome do restaurante" />
+            <Card photo={restaurante} title="Nome do restaurante" />
           </Slider>
         </Search>
       </Container>
