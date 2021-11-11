@@ -5,7 +5,12 @@ export const GlobalStyle = createGlobalStyle`
     margin: 0;
     padding: 0;
     outline: 0;
-    box-sizing: border-box
+    box-sizing: border-box;
+    transition: 0.3s ease-in;
+  }
+
+  html {
+    scroll-behavior: smooth;
   }
 `;
 
