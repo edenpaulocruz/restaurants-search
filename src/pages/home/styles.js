@@ -52,3 +52,23 @@ export const CarouselTitle = styled.h1`
   line-height: 2rem;
   margin-top: 1rem;
 `;
+
+export const ModalTitle = styled.p`
+  color: ${(props) => props.theme.colors.text};
+  font-family: ${(props) => props.theme.fonts.regular};
+  font-size: 1.5rem;
+  font-weight: bold;
+  letter-spacing: 0.11px;
+  line-height: 2rem;
+  margin-bottom: 10px;
+`;
+
+export const ModalContent = styled.p`
+  color: ${(props) => props.theme.colors.text};
+  font-family: ${(props) => props.theme.fonts.regular};
+  font-size: 1rem;
+  font-weight: normal;
+  line-height: 1.25rem;
+  margin-bottom: 10px;
+  text-transform: none;
+`;
